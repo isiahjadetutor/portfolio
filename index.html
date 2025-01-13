@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Personal Portfolio Webpage</title>
+
+        <!--CUSTOM CSS FILE LINK-->
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <!--CUSTOMER JS FILE LINK-->
+        <script src="jsfile/script.js" defer></script>
+
+        <!--IMPORT BOX ICONS FOR FOOTER-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--IMPORT POPPINS FONT FROM GOOGLE FONTS-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--IMPORT FONT-AWSOME ICONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+
+    <body>
+        <!--=====================HEADER=====================-->
+        <header class="header">
+            <div class="logo-hover-effect">
+                <a href="#" class="logo"><span class="first-letter">P</span>ortfolio.</a>
+            </div>
+            <!-- Navigation links -->
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact-me" class="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Navbar for Mobile view-->
+            <div class="mobile-nav">
+                <div class="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+            <!-- Contact me button -->
+            <div class="contact-me-container">
+                <a href="#contact-me" class="contact">Contact Me</a>
+            </div>
+
+        </header>             
+
+        <!--=====================LANDING PAGE/ HOME CONTENT SECTION=====================-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi,</h3>
+                <h1>I'm <span>Isiah</span>
+                    <br>a Front-End Developer</h1>
+
+                <p>I'm a Front-End Developer with a passion for creating user-friendly websites. 
+                    With entry-level experience in website development and documentation. I specialize 
+                    in WordPress, HTML, and CSS. I've had the opportunity to contribute to projects for 
+                    my internship company and my school, demonstrating my passion for growth and innovation.
+                </p>
+
+                <div class="btn-box">
+                    <a href="#contact-me"><button class="btn-1">Hire Me</button></a>
+                    <a href="#experience"><button class="btn-2">Experience</button></a>
+                </div>
+            </div>
+            
+            <!--PERSONAL IMAGE-->
+            <div class="img-container">
+                <img id="personal-photo" src="./css/images/personal-photo.png" class="personal-photo" alt="Isiah Personal Photo" loading="lazy">
+            </div>
+        </section>
+
+        <!--=====================ABOUT ME SECTION=====================-->
+        <section class="about" id="about">
+
+            <div class="about-me">
+                <h2 class="heading">About <span>Me</span></h2>
+                <p>My Introduction</p>
+            </div>
+            <div class="abt-me-container">
+                <div class="about-img">
+                    <!--PHOTO FOR ABOUT PAGE-->
+                    <img src="./css/images/professional-photo.jpg" alt="" class="abt-me-img">
+                </div>
+
+                <div class="about-content">                  
+                    <p class="abt-description"> Recent graduate and aspiring front-end developer based 
+                        in the Philippines with academic experience in web technologies 
+                        and UI/UX design through Project Based Learning and Internship. </p>
+                    <!--=====================YEARS OF EXPERIENCE=====================-->
+                    <div class="years-exp">
+                        <ul>
+                            <li>
+                                <h1>03</h1>
+                                <p>Completed Projects</p>
+                            </li>
+                            <li>
+                                <h1>06</h1>
+                                <p>Months Experience</p>
+                            </li>
+                            <li>
+                                <h1>01</h1>
+                                <p>Internship company</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="./css/images/IsiahJadeTutor_CV.pdf" download class="dl-cv">Download CV <i class='bx bx-download'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--=====================EXPERIENCE SECTION=====================-->
+        <section class="experience" id="experience">
+
+            <h2 class="experience-title"><span>Exp</span>erience</h2>
+
+            <div class="experience-info">
+
+                <div class="grid">
+                    <div class="grid-card" id="grid-card-1" onclick="togglePopup('popup-1')"> <!--1st grid card-->
+                        <i class="fa-brands fa-wordpress"></i>
+                        <span>Frontend Developer - Wordpress</span>
+                        <h2>3 months</h2>
+                        <p>I designed and developed a website using WordPress' 
+                            Elementor Page builder and hosted using Hostinger.</p>
+                        
+                    </div>
+                    <div class="grid-card" id="grid-card-1" onclick="togglePopup('popup-2')"> <!--2nd grid card-->
+                        <i class="fa-solid fa-image"></i>
+                        <span>Photo Editor - Adobe Photoshop</span>
+                        <h2>3 months</h2>
+                        <p>I am capable of photo editing with basic knowledge
+                            and skills in Adobe Photoshop.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <!--image for experience section-->
+                <img src="./css/images/paris-photo-3.png" alt="">
+            </div>
+        </section>
+
+        <!--=====================RECENT PROJECTS SECTION=====================-->
+        <section class="projects" id="projects">
+
+            <!-------1ST PROJECT-------->
+            <h2 class="project-title">Recent<span> Projects</span></h2> <!--project title-->
+
+            <div class="projects-grid"> <!--project grid-->
+
+                 <!--1st project card-->
+                <div class="project-card">
+                    <img src="./css/images/krkytrading-project.png" alt="K-RKY Trading Project Snippet"> <!--project img-->
+                    <h3>Internship Project</h3> <!--project name-->
+                    <p>K-RKY Trading: A Streamline Product Catalogue Website</p> <!--project short description-->
+                    <!--project button-->
+                    <div class="btn-group">
+                        <div class="project-btn" onclick="togglePopup('popup-3')">See More</div> 
+                    </div>
+                </div>
+
+                 <!-- 2nd project card-->
+                <div class="project-card">
+                    <img src="./css/images/ramsecaf-project.png" alt="K-RKY Trading Project Snippet"> <!--project img-->
+                    <h3>Academic Project</h3> <!--project name-->
+                    <p>RAMS E-CAF: A Web-Based Management System for Asia Pacific College</p> <!--project short description-->
+                    <!--project button-->
+                    <div class="btn-group">
+                        <div class="project-btn" onclick="togglePopup('popup-4')">See More</div> 
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--=====================EDUCATION SECTION=====================-->
+        <div class="ed-container">
+
+            <main class="ed-row">
+
+                <section class="education" id="education">
+                    <!--header title-->
+                    <header class="ed-title">
+                        <h2><span>EDU</span>CATION</h2>
+                    </header>
+                    <!--contents-->
+                    <div class="ed-content">
+
+                        <!--education-box-1-->
+                        <div class="box">
+                            <h4>2020 - 2024</h4>
+                            <h3>Bachelor's Degree</h3>
+                            <p>Asia Pacific College</p>
+                            <p>Bachelor of Science in Computer Science with 
+                                Specialization in Software and Systems</p>
+                        </div>
+                        <!--education-box-1-->
+                        <div class="box">
+                            <h4>2018 - 2020</h4>
+                            <h3>Senior High School Degree</h3>
+                            <p>Asia Pacific College</p>
+                            <p>Science, Technology, Engineering, Mathematics
+                                with Specialization in Engineering</p>
+                        </div>
+                        <!--education-box-1-->
+                        <div class="box">
+                            <h4>2014 - 2018</h4>
+                            <h3>Junior High School Degree</h3>
+                            <p>Golden Achievers Academy - Parañaque</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
+            </main>    
+        </div>
+
+        <!--=====================CONTACT FORM SECTION=====================-->
+        <section class="contact-form" id="contact-form">
+            <!--contact me title-->
+            <div class="contact-title-container">
+                <h2 class="contact-me" id="contact-me"><span>Contact</span> Me ➢</h2>
+                <p>Feel free to connect with me on my <a href="#form-title">Email Address</a> or reach out
+                    through my <a href="#footer">Social Medias</a>. </p>
+            </div>
+            
+            <div class="form-title" id="form-title">
+                <h1>Get in touch</h1>
+            </div>
+        
+            <!--contact form-->
+            <form action="https://api.web3forms.com/submit" method="POST">
+        
+                <div class="input-box">
+                    <!--access key to forms-->
+                    <input type="hidden" name="access_key" value="9463a08c-657d-473d-adb7-285ad4328f53">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+        
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" name="phone" required>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+        
+                <!--text area-->
+                <textarea name="message" id="" cols="30" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="snd-msg">
+            </form>
+        </section>
+
+        <!--=====================FOOTER SECTION=====================-->
+        <footer class="footer" id="footer">
+
+            <h1><span>P</span>ortfolio.</h1>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/isiah-jade-tutor-a43515259/" target="_blank"><i class='bx bxl-linkedin-square'></i></a> <!--LINKEDIN -->
+                <a href="https://www.facebook.com/isiahthomas711/" target="_blank"><i class='bx bxl-facebook-square' ></i></a> <!--FACEBOOK-->
+                <a href="https://www.instagram.com/dltkdiu/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a> <!--INSTAGRAM-->
+                <a href="" target="_blank"><i class='bx bxl-twitter' ></i></a> <!--TWITTER-->
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#home">Home</a> 
+                </li>
+
+                <li><div>|</div></li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li><div>|</div></li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li><div>|</div></li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+            </ul>
+
+            <div class="copyright">
+                <p>© 2025 Isiah | All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!--================================================POPUP BOX FOR EXPERIENCE SECTION================================================-->
+
+        <!--WORDPRESS DEVELOPER POPUP BOX-->
+        <div class="popup" id="popup-1">
+            <div class="overlay" onclick="closePopup('popup-1')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closePopup('popup-1')">&times;</div>
+
+                    <!--icon and title-->
+                    <h1><i class="fa-brands fa-wordpress" id="popup-box-icons"></i></i>
+                        WordPress Developer - Frontend Developer</h1>
+
+                    <!--subtitle-->
+                    <h3 class="subtitle">Internship at Racing R Corporation</h3>
+
+                    <!--date and location-->
+                    <h4><i class='bx bxs-calendar'></i> May 2024 - Jul 2024 - 3mos <br> 
+                        <i class="fa-solid fa-location-dot"></i> Makati, National Capital Region, Philippines</h4>
+
+                    <!--description-->
+                    <p class="content-p1">I designed and developed a website using WordPress' Elementor 
+                    Page Builder and other plugins and hosted using Hostinger for my internship company..</p>
+
+                    <!--output-->
+                    <p class="content-p1"> Output: <a href="https://krkytrading.com" target="_blank">K-RKY Trading Website</a></p>
+
+                    <!--skills-->
+                    <p class="content-p2"><i class='bx bx-diamond'></i>
+                    WordPress, Content Management Systems (CMS),
+                    Elementor Page Builder, Responsive Web Design,
+                    HTML, Cascading Style Sheets (CSS)</p>
+            </div>
+        </div>
+
+        <!--PHOTO EDITOR - ADOBE PHOTOSHOP POPUP BOX-->
+        <div class="popup" id="popup-2">
+            <div class="overlay" onclick="closePopup('popup-2')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closePopup('popup-2')">&times;</div>
+
+                <!--icon and title-->
+                <h1><i class="fa-solid fa-image"></i>
+                    Photo Editor - Adobe Photoshop</h1>
+
+                <!--subtitle-->
+                <h3 class="subtitle">Internship at Racing R Corporation</h3>
+
+                <!--date and location-->
+                <h4><i class='bx bxs-calendar'></i> Apr 2024 - Jun 2024 - 3mos <br> 
+                    <i class="fa-solid fa-location-dot"></i> Makati, National Capital Region, Philippines</h4>
+
+                <!--description-->
+                <p class="content-p1">I enhanced images of installed products 
+                    using Adobe Photoshop with basic editing tools and techniques, 
+                    creating visually appealing content for marketing.</p>
+
+                <!--output-->
+                <p class="content-p1">Output: <span>Posters for Marketing</span></p>
+
+                <!--skills-->
+                <p class="content-p2"><i class='bx bx-diamond'></i>
+                    Photo Editing, Adobe Photoshop</p>
+            </div>
+        </div>
+
+        <!--================================================POPUP BOX FOR PROJECTS SECTION================================================-->
+
+        <!--K-RKY TRADING PROJECT POPUP BOX-->
+        <div class="popup" id="popup-3">
+            <div class="overlay" onclick="closePopup('popup-3')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closePopup('popup-3')">&times;</div>
+                <!--title-->
+                <h1><i class="fa-brands fa-wordpress"></i> K-RKY Trading Project</h1>
+
+                <!--subtitle-->
+                <h3>Internship Project</h3>
+
+                <!--time span / date-->
+                <h4><i class="fa-solid fa-building"></i> RACING R CORPORATION <br> 
+                    <i class='bx bxs-calendar'></i> May 2024 - July 2024 - 3mos</h4>
+        
+                <!--description-->
+                <p class="content-p1">This project aims to develop an online catalog for K-RKY Trading. 
+                    The primary goal is to create a strong digital presence that effectively
+                    displays their products and strenghthens their brand identity.
+                <!--role-->
+                <p class="content-p1"><i class="fa-solid fa-user"></i>
+                    Role: Frontend Developer • UI/UX Designer • Photo Editor</p>
+                <!--link-->
+                <p class="content-p1"><i class="fa-solid fa-link"></i>
+                    Link: <a href="https://krkytrading.com" target="_blank">K-RKY Trading Website</a></p>
+                <!--developed through-->
+                <p class="content-p2"><i class='bx bx-diamond'></i>
+                    WordPress, Hostinger, Elementor Page Builder</p>
+    
+            </div>
+        </div>
+
+        <!--RAMS E-CAF PROJECT POPUP BOX-->
+        <div class="popup" id="popup-4">
+            <div class="overlay" onclick="closePopup('popup-4')"></div>
+            <div class="content">
+                <div class="close-btn" onclick="closePopup('popup-4')">&times;</div>
+                <!--title-->
+                <h1><i class="fa-solid fa-code"></i> RAMS E-CAF Project</h1>
+
+                <!--subtitle-->
+                <h3>Project Based Learning</h3>
+
+                <!--time span / date-->
+                <h4><i class="fa-solid fa-building"></i> ASIA PACIFIC COLLEGE <br> 
+                    <i class='bx bxs-calendar'></i> Aug 2021 - July 2024 - 3yrs</h4>
+        
+                <!--description-->
+                <p class="content-p1">The RAMS E-CAF is an online ordering system for 
+                    the Asia Pacific College cafeteria. It is designed to make ordering 
+                    food easy and quick for its community. This project was handed over
+                    to the school's IT Department.
+                </p>
+
+                <p class="content-p1"><i class="fa-solid fa-user"></i>
+                    Role: UI / UX Designer • Documentation</p>
+
+                <!--developed through-->
+                <p class="content-p2"><i class='bx bx-diamond'></i>
+                    Laravel, Localhost, HTML, CSS, Javascript, PHP</p>
+    
+            </div>
+        </div>
+
+    </body>
+</html>
