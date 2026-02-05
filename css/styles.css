@@ -126,7 +126,7 @@
     align-items: center; /* Center content vertically */
     justify-content: space-between; /* Separate content and image */
     gap: 7em;
-    padding-top: 4%;
+    padding-top: 6%;
     padding-left: 10%;
     padding-right: 7%;
     position: relative;  /* Make sure the content in the home section is positioned correctly */
@@ -1396,3 +1396,4 @@ body.no-scroll { /* no scroll after popup box display */
         font-size: 10px;
     }
 }   
+
